@@ -122,11 +122,11 @@ p {
   text-decoration-color: #50a5d7;
 }
 .intro > img {
-  margin: 0 0.5rem;
+  margin: 4rem;
+  margin-left: 33%;
   border-radius: 25rem;
-  margin-top: 4rem;
-  margin-left: 25%;
-  box-shadow: 0.1rem 0.1rem #c43277;
+  box-shadow: 0.25rem 0.25rem #50a5d7;
+  width: 25%;
 }
 
 /* header and navigation */
