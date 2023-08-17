@@ -1,5 +1,157 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+/* layout */
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 2rem;
+}
+
+.card-wrapper {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.card {
+  min-width: 30%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 3rem 1rem;
+  margin: 1rem 0;
+  border: 0.15rem solid black;
+  box-shadow: 0.5rem 0.5rem #23a6d5;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.card:hover {
+  background-color: #23a6d5;
+  transition: all 0.5s ease-in-out;
+  border-color: white;
+  box-shadow: 0.5rem 0.5rem black;
+}
+
+.card > p {
+  color: #e73c7e;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1rem;
+}
+.card > ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+.card > ul > li {
+  color: black;
+  display: inline;
+  margin: 0 0.25rem;
+}
+
+.card > ul > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #e73c7e;
+  text-decoration-thickness: 0.25rem;
+}
+.card > ul > li::before {
+  content: "#";
+}
+
+/*  font styles  */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  font-style: italic;
+  line-height: 1.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+h3 {
+  font-weight: 700;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  line-height: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+#intro-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  color: #fff;
+}
+#intro-text:hover {
+  text-decoration: underline;
+}
+
+/* header and navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.3);
+  background-color: #e73c7e;
+  opacity: 0.5;
+  padding: 0 2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+nav a:hover {
+  color: #000;
+}
+
+/* animations  */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
