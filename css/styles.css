@@ -7,8 +7,8 @@
 }
 /* layout */
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
+  background: linear-gradient(-45deg, #d9c95f, #c43277, #50a5d7, #d9c95f);
+  background-size: 200% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
   font-size: 1rem;
@@ -27,30 +27,28 @@ body {
 }
 
 .card {
-  min-width: 30%;
-  max-width: 600px;
-  background: #fff;
+  background-color: #50a5d7;
   border-radius: 0.5rem;
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 0;
   border: 0.15rem solid black;
-  box-shadow: 0.5rem 0.5rem #23a6d5;
-  background-color: white;
-  opacity: 0.8;
+  box-shadow: 0.5rem 0.5rem #d9c95f;
 }
 
 .card:hover {
-  background-color: #23a6d5;
   transition: all 0.5s ease-in-out;
-  border-color: white;
+  border-color: #c43277;
   box-shadow: 0.5rem 0.5rem black;
 }
 
 .card > p {
-  color: #e73c7e;
-  font-family: monospace;
-  font-style: italic;
-  font-size: 1rem;
+  text-align: center;
+  font-size: 4rem;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 2rem;
+  box-shadow: 0.1rem 0.1rem #c43277;
+  font-style: normal;
 }
 .card > ul {
   list-style: none;
@@ -74,11 +72,13 @@ body {
 
 /*  font styles  */
 h1 {
+  color: #c43277;
   font-size: 3rem;
   font-weight: 700;
+  text-shadow: -0.25rem -0.1rem black;
   margin: 2rem 0;
   font-style: italic;
-  line-height: 1.2rem;
+  line-height: 2.4rem;
 }
 
 h2 {
@@ -87,10 +87,15 @@ h2 {
   margin: 2rem 0;
   line-height: 1rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #c43277;
+  rotate: -2.5deg;
+  text-shadow: -0.1rem -0.1rem #d9c95f;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 h3 {
+  color: #c43277;
   font-weight: 700;
   margin: 1rem 0;
   text-transform: uppercase;
@@ -98,19 +103,23 @@ h3 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 2rem;
+  color: white;
   line-height: 1.5;
   margin: 1rem 0;
+  font-style: italic;
 }
 
 #intro-text {
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 3rem;
+  line-height: 1.25;
+  color: black;
   margin: 1rem 0;
-  color: #fff;
 }
+
 #intro-text:hover {
   text-decoration: underline;
+  text-decoration-color: #50a5d7;
 }
 
 /* header and navigation */
@@ -120,12 +129,13 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  border-bottom: 1px solid rgba(256, 256, 256, 0.3);
-  background-color: #e73c7e;
-  opacity: 0.5;
+  background-color: #d9c95f;
+  border-bottom: 1px solid #d9c95f;
   padding: 0 2rem;
   border-bottom-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem #23a6d5;
+  z-index: 100;
 }
 
 nav {
@@ -136,11 +146,15 @@ nav {
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #fff;
-  font-size: 1.5rem;
+  color: #c43277;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 nav a:hover {
-  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #c43277;
+  text-decoration-thickness: 0.25rem;
 }
 
 /* animations  */
