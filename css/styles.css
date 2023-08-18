@@ -26,16 +26,18 @@ main {
 }
 
 .card-wrapper {
-  width: 90vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
   margin-top: 4rem;
+  flex-grow: 0;
 }
 
 .card {
+  width: 45ch;
   background-color: #50a5d7;
   border-radius: 0.5rem;
   padding: 1rem 1rem 1rem 1rem;
@@ -52,11 +54,12 @@ main {
 
 .card > p {
   text-align: center;
-  font-size: 4rem;
+  font-size: 6rem;
   background-color: white;
   border-radius: 50%;
-  margin: 0 2rem;
-  box-shadow: 0.1rem 0.1rem #c43277;
+  padding: 4rem;
+  margin: 2rem;
+  box-shadow: 0.4rem 0.4rem #c43277;
   font-style: normal;
 }
 .card > ul {
@@ -64,7 +67,7 @@ main {
   margin: 1rem 0;
 }
 .card > ul > li {
-  color: black;
+  color: white;
   display: inline;
   margin: 0 0.25rem;
 }
@@ -105,6 +108,7 @@ h2 {
 h3 {
   color: #c43277;
   font-weight: 700;
+  font-size: 2rem;
   margin: 1rem 0;
   text-transform: uppercase;
   line-height: 1rem;
@@ -120,12 +124,6 @@ p {
   margin: 0 auto;
 }
 
-.intro {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  place-items: center;
-  place-content: center;
-}
 .intro > p {
   font-size: 3rem;
   text-shadow: -0.15rem -0.15rem #c43277;
