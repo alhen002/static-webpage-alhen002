@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
 /* layout */
 body {
   background: linear-gradient(-45deg, #d9c95f, #c43277, #50a5d7, #d9c95f);
@@ -15,6 +19,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0 2rem;
 }
+
 main {
   margin-top: 6rem;
   padding-bottom: 12rem;
@@ -86,10 +91,9 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin: 2rem 0;
-  line-height: 1rem;
+  margin: 4rem 0;
   text-transform: uppercase;
   color: #c43277;
   rotate: -2.5deg;
@@ -112,6 +116,8 @@ p {
   line-height: 1.5;
   margin: 1rem 0;
   font-style: italic;
+  max-width: 45ch;
+  margin: 0 auto;
 }
 
 .intro {
@@ -122,14 +128,17 @@ p {
 }
 .intro > p {
   font-size: 3rem;
+  text-shadow: -0.15rem -0.15rem #c43277;
   line-height: 1.25;
-  color: black;
+  color: #d9c95f;
   margin: 1rem 0;
+  line-height: 6rem;
 }
 
 .intro > p:hover {
   text-decoration: underline;
   text-decoration-color: #50a5d7;
+  max-width: 45ch;
 }
 .intro > img {
   margin: 4rem;
@@ -146,11 +155,11 @@ header {
   position: sticky;
   top: 0;
   background-color: #d9c95f;
-  border-bottom: 1px solid #d9c95f;
+  border-bottom: 1px solid #c43277;
   padding: 0 2rem;
   border-bottom-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
-  box-shadow: 0.5rem 0.5rem #23a6d5;
+  box-shadow: 0.5rem 0 #23a6d5;
   z-index: 100;
 }
 
@@ -164,8 +173,10 @@ nav a {
   text-decoration: none;
   color: #c43277;
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.2rem;
+  text-shadow: -0.1rem -0.1rem #23a6d5;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2rem;
 }
 nav a:hover {
   text-decoration: underline;
