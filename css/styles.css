@@ -25,6 +25,16 @@ main {
   padding-bottom: 12rem;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 12rem auto;
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .card-wrapper {
   display: flex;
   flex-direction: row;
@@ -38,18 +48,29 @@ main {
 
 .card {
   background-color: white;
+  opacity: 0.5;
   width: 45ch;
   border-radius: 0.5rem;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 0;
-  border: 0.25rem solid black;
+  border: 0.5rem solid black;
   box-shadow: 0.5rem 0.5rem black;
+  transition: all 0.25s ease;
 }
 
 .card:hover {
-  transition: all 0.5s ease-in-out;
-  border-color: white;
-  box-shadow: 0.5rem 0.5rem black;
+  transition: all 0.5s ease;
+  border-color: #c43277;
+  opacity: 1;
+}
+/* merken, ist voll geil ! */
+.card:hover > p {
+  box-shadow: 0.5rem 0.5rem #c43277;
+  transition: all 0.25s ease-in-out;
+}
+.card:hover > h3 {
+  color: #c43277;
+  transition: all 0.25s ease-in-out;
 }
 
 .card > p {
@@ -58,16 +79,20 @@ main {
   border-radius: 50%;
   padding: 4rem;
   margin: 2rem;
-  box-shadow: 0.4rem 0.4rem white;
+  box-shadow: 0.4rem 0.4rem black;
   font-style: normal;
 }
+
 .card > ul {
   list-style: none;
+  display: flex;
   margin: 1rem 0;
+  flex-direction: column;
 }
 .card > ul > li {
-  color: white;
-  display: inline;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1.5;
   margin: 0 0.25rem;
 }
 
@@ -81,13 +106,36 @@ main {
   content: "#";
 }
 
+button {
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+.primary {
+  background-color: #e73c7e;
+  font-style: italic;
+  box-shadow: 0.5rem 0.5rem black;
+  text-align: center;
+  margin: 2rem 0;
+}
+.primary:hover {
+  background-color: #c43277;
+  box-shadow: 0.5rem 0.5rem white;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
 /*  font styles  */
 h1 {
   color: #c43277;
   font-size: 3rem;
   font-weight: 700;
   text-shadow: -0.25rem -0.1rem black;
-  margin: 2rem 0;
   font-style: italic;
   line-height: 2.4rem;
 }
@@ -105,7 +153,7 @@ h2 {
 }
 
 h3 {
-  color: white;
+  color: black;
   font-weight: 700;
   font-size: 2rem;
   margin: 1rem 0;
@@ -114,17 +162,17 @@ h3 {
 }
 
 p {
-  font-size: 2rem;
-  color: white;
+  font-size: 4rem;
+  text-shadow: -0.15rem -0.15rem white;
+  color: #c43277;
   line-height: 1.5;
   margin: 1rem 0;
   font-style: italic;
   max-width: 45ch;
-  margin: 0 auto;
 }
 
 .intro > p {
-  font-size: 3rem;
+  font-size: 4rem;
   text-shadow: -0.15rem -0.15rem #c43277;
   line-height: 1.25;
   color: #d9c95f;
