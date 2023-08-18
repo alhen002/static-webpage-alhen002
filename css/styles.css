@@ -138,13 +138,6 @@ p {
 .intro > p:hover {
   text-decoration: underline;
   text-decoration-color: #50a5d7;
-  max-width: 45ch;
-}
-.intro > img {
-  margin: 4rem;
-  border-radius: 25rem;
-  box-shadow: 0.5rem 0.5rem #50a5d7;
-  width: 75%;
 }
 
 /* header and navigation */
